@@ -1,0 +1,58 @@
+@@ -3,19 +3,50 @@
+<head>
+    <meta charset="UTF-8">
+
+    <title>Title</title>
+    <title>Plant Diasease Detection</title>
+</head>
+
+<style>
+h1 {text-align: center;}
+form {text-align: center;}
+
+</style>
+
+<body>
+<div>
+
+
+<h1>
+    Plant Disease Detection
+Plant Disease Detection
+</h1>
+<br>
+<br>
+<br>
+
+<form action="/action_page.php">
+  <input type="file" id="myFile" name="filename">
+    <br>
+    <br>
+  <br><input type="submit">
+<form method=post enctype=multipart/form-data>
+  <input type=file name=file>
+  <input type=submit value=Upload>
+
+</form>
+
+</div>
+<br>
+<br>
+<br>
+<div align="center">
+      {% if cls %}
+        <h3>Result</h3>
+        <br>
+        <div id="cls">
+            Predicted class: {{cls}}
+        </div>
+    <br>
+        <div id="prob">
+            Probability: {{prob}}
+        </div>
+        {% endif %}
+    </div>
+
+</body>
+
+</html>
